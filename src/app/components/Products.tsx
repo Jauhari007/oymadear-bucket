@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { ProductCard } from './ProductCard';
-import { ProductModal } from './ProductModal';
+import { ProductCard } from './ProductCards';
+import { ProductModal } from './ProductModel';
 
 export interface Product {
   id: string;
