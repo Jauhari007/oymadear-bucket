@@ -4,18 +4,18 @@ export function About() {
   const features = [
     {
       icon: Heart,
-      title: 'Quality Materials',
-      description: 'We use only the freshest flowers and premium materials for every arrangement.',
+      title: 'Bahan Berkualitas',
+      description: 'Kami hanya menggunakan bunga segar dan material premium untuk setiap rangkaian.',
     },
     {
       icon: Sparkles,
-      title: 'Creative Designs',
-      description: 'Each bucket is uniquely crafted with creativity and attention to detail.',
+      title: 'Desain Kreatif',
+      description: 'Setiap bucket dibuat unik dengan sentuhan kreativitas dan detail yang rapi.',
     },
     {
       icon: Users,
-      title: 'Customer Happiness',
-      description: 'Your satisfaction is our priority. We ensure every order brings joy.',
+      title: 'Kepuasan Pelanggan',
+      description: 'Kepuasan Anda adalah prioritas kami. Setiap pesanan dibuat untuk menghadirkan senyuman.',
     },
   ];
 
@@ -24,12 +24,13 @@ export function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">OyMaDear</span>
+            Tentang{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">OyMaDear</span>
           </h2>
           <p className="text-lg text-gray-600">
-            OyMaDear is a handmade bucket flower brand dedicated to creating beautiful, heartfelt arrangements 
-            for your special moments. We believe every celebration deserves a touch of elegance and love, 
-            carefully crafted into each bucket arrangement we create.
+            OyMaDear adalah brand bucket bunga handmade yang berfokus pada rangkaian cantik dan penuh makna
+            untuk setiap momen spesial Anda. Kami percaya setiap perayaan layak mendapat sentuhan elegan dan
+            penuh cinta, yang kami tuangkan dalam setiap bucket yang kami buat.
           </p>
         </div>
 

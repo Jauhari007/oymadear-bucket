@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { ProductCard } from './ProductCards';
 import { ProductModal } from './ProductModel';
+import bucket1 from './images/bucket_1.jpg';
+import bucket2 from './images/bucket_2.jpg';
+import bucket3 from './images/bucket_3.jpg';
+import bucket4 from './images/bucket_4.jpg';
+import bucket5 from './images/bucket_5.jpg';
+import bucket6 from './images/bucket_6.jpg';
 
 export interface Product {
   id: string;
@@ -18,57 +24,93 @@ export function Products() {
   const products: Product[] = [
     {
       id: '1',
-      name: 'Pink Romance Bucket',
-      description: 'Elegant pink roses arrangement perfect for romantic occasions',
+      name: 'Black Elegance Bloom',
+      description:
+        'Bucket bunga nuansa hitam elegan + pita gold, kesan mewah & classy.',
       price: 'Rp 150.000',
-      image: 'https://images.unsplash.com/photo-1584972720792-5477c604d033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBidWNrZXQlMjBmbG93ZXIlMjBhcnJhbmdlbWVudCUyMHBpbmt8ZW58MXx8fHwxNzczNjgyMTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'A stunning arrangement of fresh pink roses carefully placed in a decorative bucket. Perfect for anniversaries, Valentine\'s Day, or just to show someone you care. Each rose is hand-selected for its beauty and freshness.',
-      variants: ['Small (10 roses)', 'Medium (20 roses)', 'Large (30 roses)'],
+      image: bucket1,
+      fullDescription:
+        'Bucket bunga dengan dominasi warna hitam elegan yang dipadukan dengan pita gold. Cocok untuk hadiah yang ingin terlihat mewah, classy, dan berkesan eksklusif di setiap momen spesial.',
+      variants: [
+        'Mini Black Elegance — ukuran kecil, nuansa hitam + pita gold.',
+        'Signature Black Elegance — ukuran sedang dengan isi bunga lebih banyak.',
+        'Grand Black Elegance — ukuran besar untuk momen super spesial.',
+      ],
     },
     {
       id: '2',
-      name: 'Graduation Glory',
-      description: 'Special bucket arrangement to celebrate academic achievements',
+      name: 'Silver Pastel Celebration',
+      description:
+        'Bucket bunga warna silver mix pastel — cocok untuk wisuda / achievement.',
       price: 'Rp 175.000',
-      image: 'https://images.unsplash.com/photo-1662326495491-764da874b01f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0aW9uJTIwZmxvd2VyJTIwYm91cXVldCUyMGJ1Y2tldHxlbnwxfHx8fDE3NzM2ODIxNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'Celebrate the graduate\'s achievement with this specially designed bucket arrangement. Features a mix of vibrant flowers symbolizing success and new beginnings. Can be customized with school colors or personal preferences.',
-      variants: ['Standard', 'Deluxe with teddy bear', 'Premium with money holder'],
+      image: bucket2,
+      fullDescription:
+        'Bucket bunga dengan kombinasi warna silver elegan dan pastel lembut yang manis. Sangat cocok untuk hadiah wisuda, kenaikan jabatan, atau momen achievement lainnya yang ingin dirayakan dengan cara yang anggun dan istimewa.',
+      variants: [
+        'Basic Silver Pastel — bucket standar untuk ucapan selamat.',
+        'Wisuda Silver Pastel — dengan sentuhan dekorasi wisuda/achievement.',
+        'Premium Silver Pastel — isi bunga lebih banyak dan dekorasi ekstra mewah.',
+      ],
     },
     {
       id: '3',
-      name: 'Birthday Bliss',
-      description: 'Cheerful arrangement to make birthday celebrations extra special',
+      name: 'Milky Joy Bouquet',
+      description:
+        'Bucket snack susu & manis-manis — kesan ceria & sweet gift.',
       price: 'Rp 165.000',
-      image: 'https://images.unsplash.com/photo-1772688168226-c0968d4816ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMGZsb3dlciUyMGFycmFuZ2VtZW50JTIwcm9zZXxlbnwxfHx8fDE3NzM2ODIxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'A joyful mix of colorful blooms designed to brighten anyone\'s birthday. This arrangement combines roses, carnations, and seasonal flowers to create a festive and cheerful display.',
-      variants: ['Classic', 'With balloon', 'With birthday cake topper'],
+      image: bucket3,
+      fullDescription:
+        'Bucket snack dengan isian susu dan camilan manis yang disusun cantik seperti bouquet. Hadiah yang terasa fun, ceria, dan penuh manisnya perhatian untuk sahabat, pasangan, atau keluarga.',
+      variants: [
+        'Milky Joy Mini — isi snack susu & manis-manis ukuran kecil.',
+        'Milky Joy Regular — isi lebih banyak untuk hadiah spesial.',
+        'Milky Joy Party — paket besar untuk momen berbagi dan surprise.',
+      ],
     },
     {
       id: '4',
-      name: 'Premium Pink Dreams',
-      description: 'Luxury pink roses arrangement for the most special occasions',
+      name: 'Sweet Crunch Fiesta',
+      description:
+        'Bucket snack warna-warni, fun & rame — cocok ulang tahun / surprise.',
       price: 'Rp 200.000',
-      image: 'https://images.unsplash.com/photo-1587371921769-eda287cc0209?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5rJTIwcm9zZSUyMGJvdXF1ZXQlMjBwcmVtaXVtfGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'Our premium collection featuring the finest pink roses arranged in an elegant bucket. Perfect for proposals, anniversaries, or when only the best will do. Includes premium wrapping and personalized message card.',
-      variants: ['Premium (40 roses)', 'Luxury (60 roses)', 'Custom arrangement'],
+      image: bucket4,
+      fullDescription:
+        'Bucket snack penuh warna dengan aneka camilan yang fun dan rame. Sempurna untuk hadiah ulang tahun, kejutan kecil yang seru, atau surprise party yang ingin terasa meriah dan berkesan.',
+      variants: [
+        'Sweet Crunch Mini — isi snack pilihan ukuran kecil.',
+        'Sweet Crunch Party — isi lebih banyak untuk momen kumpul bareng.',
+        'Sweet Crunch Jumbo — paket besar untuk kejutan yang super rame.',
+      ],
     },
     {
       id: '5',
-      name: 'Red Passion',
-      description: 'Bold red roses arrangement expressing deep love and passion',
+      name: 'Choco Royal Treat',
+      description:
+        'Bucket dominan coklat premium — kesan eksklusif & "wow".',
       price: 'Rp 180.000',
-      image: 'https://images.unsplash.com/photo-1671761950074-c623f925c089?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmbG93ZXIlMjBhcnJhbmdlbWVudCUyMHJlZCUyMHJvc2VzfGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'Express your deepest feelings with this stunning red rose arrangement. Each velvety red rose is carefully selected and arranged to create a dramatic and romantic display that speaks volumes.',
-      variants: ['Standard (15 roses)', 'Deluxe (25 roses)', 'Ultimate (50 roses)'],
+      image: bucket5,
+      fullDescription:
+        'Bucket snack dengan dominasi coklat premium yang disusun rapi dan elegan. Hadiah yang memberi kesan eksklusif, manis, dan benar-benar "wow" untuk orang tersayang maupun kolega.',
+      variants: [
+        'Choco Royal Basic — kombinasi coklat favorit ukuran standar.',
+        'Choco Royal Deluxe — isi coklat lebih banyak dan premium.',
+        'Choco Royal Signature — paket besar dengan pilihan coklat eksklusif.',
+      ],
     },
     {
       id: '6',
-      name: 'Pastel Paradise',
-      description: 'Soft pastel flowers creating a dreamy, gentle atmosphere',
+      name: 'Candy Blast Surprise',
+      description:
+        'Bucket permen merah ramai — vibes heboh & playful.',
       price: 'Rp 155.000',
-      image: 'https://images.unsplash.com/photo-1610507121084-0cb0661c72bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBmbG93ZXIlMjBib3VxdWV0JTIwYmFza2V0fGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      fullDescription: 'A delicate combination of pastel-colored flowers including roses, carnations, and baby\'s breath. Perfect for baby showers, bridal events, or anyone who loves soft, dreamy aesthetics.',
-      variants: ['Petite', 'Regular', 'Grande'],
+      image: bucket6,
+      fullDescription:
+        'Bucket permen dengan dominasi warna merah yang ramai dan mencuri perhatian. Cocok untuk kejutan seru, hadiah untuk anak-anak, atau siapa pun yang suka vibes heboh, playful, dan penuh warna.',
+      variants: [
+        'Candy Blast Mini — isi permen pilihan ukuran kecil.',
+        'Candy Blast Fun — ukuran sedang untuk hadiah dan surprise.',
+        'Candy Blast Max — paket penuh permen merah yang super heboh.',
+      ],
     },
   ];
 
@@ -77,10 +119,13 @@ export function Products() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">Products</span>
+            Produk{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">
+              OyMaDear
+            </span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover our curated collection of handcrafted bucket flower arrangements
+            Temukan koleksi bucket bunga handmade OyMaDear yang dibuat dengan sepenuh hati untuk setiap momen spesial.
           </p>
         </div>
 

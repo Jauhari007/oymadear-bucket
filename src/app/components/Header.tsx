@@ -27,27 +27,27 @@ export function Header() {
               Home
             </button>
             <button onClick={() => scrollToSection('about')} className="hover:opacity-80 transition-opacity">
-              About Us
+              Tentang Kami
             </button>
             <button onClick={() => scrollToSection('products')} className="hover:opacity-80 transition-opacity">
-              Products
+              Produk
             </button>
             <button onClick={() => scrollToSection('gallery')} className="hover:opacity-80 transition-opacity">
-              Gallery
+              Galeri
             </button>
             <button onClick={() => scrollToSection('contact')} className="hover:opacity-80 transition-opacity">
-              Contact
+              Kontak
             </button>
           </nav>
 
           {/* WhatsApp CTA Button */}
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6285336573814"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block bg-white text-red-600 px-6 py-2 rounded-full hover:bg-red-50 transition-colors font-medium"
           >
-            Order via WhatsApp
+            Pesan via WhatsApp
           </a>
 
           {/* Mobile menu button */}
@@ -74,33 +74,33 @@ export function Header() {
               onClick={() => scrollToSection('about')} 
               className="block w-full text-left py-2 hover:opacity-80 transition-opacity"
             >
-              About Us
+              Tentang Kami
             </button>
             <button 
               onClick={() => scrollToSection('products')} 
               className="block w-full text-left py-2 hover:opacity-80 transition-opacity"
             >
-              Products
+              Produk
             </button>
             <button 
               onClick={() => scrollToSection('gallery')} 
               className="block w-full text-left py-2 hover:opacity-80 transition-opacity"
             >
-              Gallery
+              Galeri
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
               className="block w-full text-left py-2 hover:opacity-80 transition-opacity"
             >
-              Contact
+              Kontak
             </button>
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285336573814"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white text-red-600 px-6 py-2 rounded-full hover:bg-red-50 transition-colors font-medium text-center"
             >
-              Order via WhatsApp
+              Pesan via WhatsApp
             </a>
           </nav>
         </div>

@@ -22,7 +22,7 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
       <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
         {/* Header */}
         <div className="sticky top-0 bg-white border-b border-gray-200 p-4 flex justify-between items-center rounded-t-3xl">
-          <h2 className="text-2xl font-serif font-semibold text-gray-900">Product Details</h2>
+          <h2 className="text-2xl font-serif font-semibold text-gray-900">Detail Produk</h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-gray-100 rounded-full transition-colors"
@@ -51,20 +51,20 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
                 <h3 className="text-3xl font-serif font-semibold text-gray-900 mb-2">
                   {product.name}
                 </h3>
-                <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">
-                  {product.price}
-                </div>
+                <p className="text-sm text-gray-500">
+                  Untuk informasi harga dan ketersediaan, silakan hubungi admin OyMaDear via WhatsApp.
+                </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Description</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Deskripsi</h4>
                 <p className="text-gray-600 leading-relaxed">
                   {product.fullDescription}
                 </p>
               </div>
 
               <div>
-                <h4 className="font-semibold text-gray-900 mb-3">Available Variants</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">Pilihan Varian</h4>
                 <div className="space-y-2">
                   {product.variants.map((variant, index) => (
                     <div
@@ -79,13 +79,15 @@ export function ProductModal({ product, onClose }: ProductModalProps) {
 
               <div className="pt-4">
                 <a
-                  href={`https://wa.me/6281234567890?text=Hi! I'd like to order ${product.name}. Can you help me with the details?`}
+                  href={`https://wa.me/6285336573814?text=Halo%20Admin%2C%20saya%20ingin%20memesan%20${encodeURIComponent(
+                    product.name,
+                  )}%20di%20OyMaDear.%20Boleh%20dibantu%20detail%20harga%20dan%20pilihan%20varian%3F`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 bg-green-500 text-white px-8 py-4 rounded-full hover:bg-green-600 transition-colors font-medium text-lg w-full"
                 >
                   <MessageCircle size={24} />
-                  Chat Admin to Order
+                  Chat Admin via WhatsApp
                 </a>
               </div>
             </div>

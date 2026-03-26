@@ -6,10 +6,10 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
-            Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">Us</span>
+            Kontak <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">Kami</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Visit our store or get in touch with us for custom orders and inquiries
+            Silakan kunjungi toko kami atau hubungi lewat WhatsApp untuk pemesanan custom dan pertanyaan lainnya.
           </p>
         </div>
 
@@ -22,11 +22,11 @@ export function Contact() {
                   <MapPin className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Our Address</h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">Alamat Kami</h3>
                   <p className="text-gray-600">
-                    Jl. Mawar Indah No. 123<br />
-                    Kelurahan Bunga Raya<br />
-                    Jakarta Selatan, 12345
+                    Jl. R.A. Kartini, Wage, Cangkringmalang<br />
+                    Kec. Beji, Pasuruan<br />
+                    Jawa Timur 67154
                   </p>
                 </div>
               </div>
@@ -38,16 +38,16 @@ export function Contact() {
                   <Phone className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Phone & WhatsApp</h3>
-                  <p className="text-gray-600 mb-2">+62 812-3456-7890</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Telepon & WhatsApp</h3>
+                  <p className="text-gray-600 mb-2">+62 853-3657-3814</p>
                   <a
-                    href="https://wa.me/6281234567890"
+                    href="https://wa.me/6285336573814"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-medium"
                   >
                     <MessageCircle size={18} />
-                    Chat on WhatsApp
+                    Chat via WhatsApp
                   </a>
                 </div>
               </div>
@@ -59,35 +59,44 @@ export function Contact() {
                   <Clock className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Opening Hours</h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">Jam Operasional</h3>
                   <div className="text-gray-600 space-y-1">
-                    <p>Monday - Friday: 09:00 - 20:00</p>
-                    <p>Saturday: 09:00 - 21:00</p>
-                    <p>Sunday: 10:00 - 18:00</p>
+                    <p>Senin - Jumat: 09.00 - 16.00</p>
+                    <p>Sabtu: 09.00 - 16.00</p>
+                    <p>Minggu: 10.00 - 16.00</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Map Placeholder */}
+          {/* Google Maps Embed */}
           <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-            <div className="w-full h-full min-h-[400px] bg-gradient-to-br from-red-100 to-pink-100 flex items-center justify-center">
-              <div className="text-center p-8">
-                <MapPin size={64} className="text-red-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">Map Location</h3>
-                <p className="text-gray-600 mb-4">
-                  Find us on the map
-                </p>
-                <a
-                  href="https://maps.google.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-red-600 to-pink-500 text-white px-6 py-3 rounded-full hover:shadow-lg transition-all font-medium"
-                >
-                  Open in Google Maps
-                </a>
+            <div className="w-full h-full min-h-[400px]">
+              <iframe
+                title="Lokasi OyMaDear di Google Maps"
+                src="https://www.google.com/maps?q=Jl.+R.A.+Kartini,+Wage,+Cangkringmalang,+Kec.+Beji,+Pasuruan,+Jawa+Timur+67154&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="p-4 border-t border-gray-200 flex items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-gray-700 text-sm md:text-base">
+                <MapPin size={20} className="text-red-500" />
+                <span>Jl. R.A. Kartini, Wage, Cangkringmalang, Beji, Pasuruan</span>
               </div>
+              <a
+                href="https://maps.app.goo.gl/MLy68QDPr7rxcXqv7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-red-600 to-pink-500 text-white px-4 py-2 rounded-full hover:shadow-lg transition-all font-medium text-sm md:text-base"
+              >
+                Buka di Google Maps
+              </a>
             </div>
           </div>
         </div>

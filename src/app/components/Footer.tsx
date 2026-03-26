@@ -16,14 +16,14 @@ export function Footer() {
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">OyMaDear</h3>
             <p className="text-red-100 mb-4">
-              Handcrafted bucket flower arrangements for your special moments. 
-              Quality, creativity, and customer happiness in every arrangement.
+              Bucket bunga handmade untuk momen spesial Anda.
+              Kualitas, kreativitas, dan kebahagiaan pelanggan di setiap rangkaian.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-semibold mb-4">Menu Cepat</h4>
             <ul className="space-y-2 text-red-100">
               <li>
                 <button onClick={() => scrollToSection('home')} className="hover:text-white transition-colors">
@@ -32,22 +32,22 @@ export function Footer() {
               </li>
               <li>
                 <button onClick={() => scrollToSection('about')} className="hover:text-white transition-colors">
-                  About Us
+                  Tentang Kami
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('products')} className="hover:text-white transition-colors">
-                  Products
+                  Produk
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('gallery')} className="hover:text-white transition-colors">
-                  Gallery
+                  Galeri
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('contact')} className="hover:text-white transition-colors">
-                  Contact
+                  Kontak
                 </button>
               </li>
             </ul>
@@ -55,10 +55,10 @@ export function Footer() {
 
           {/* Social Media */}
           <div>
-            <h4 className="font-semibold mb-4">Follow Us</h4>
+            <h4 className="font-semibold mb-4">Ikuti Kami</h4>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/oymadear"
+                href="https://instagram.com/oymadear.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -67,7 +67,7 @@ export function Footer() {
                 <Instagram size={24} />
               </a>
               <a
-                href="https://www.tiktok.com/@oymadear"
+                href="https://www.tiktok.com/@oymadear.id"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -78,7 +78,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/6281234567890"
+                href="https://wa.me/6285336573814"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -92,7 +92,9 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-red-600 pt-8 text-center text-red-100">
-          <p>&copy; {new Date().getFullYear()} OyMaDear. All rights reserved. Made with love for every special moment.</p>
+          <p>
+            &copy; {new Date().getFullYear()} OyMaDear. Semua hak cipta dilindungi. Dibuat dengan penuh cinta untuk setiap momen spesial.
+          </p>
         </div>
       </div>
     </footer>

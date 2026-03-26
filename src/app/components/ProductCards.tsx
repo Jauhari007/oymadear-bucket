@@ -21,25 +21,24 @@ export function ProductCard({ product, onViewDetail }: ProductCardProps) {
       <div className="p-6 space-y-4">
         <h3 className="text-xl font-semibold text-gray-900">{product.name}</h3>
         <p className="text-gray-600">{product.description}</p>
-        <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">
-          {product.price}
-        </div>
         
         <div className="flex flex-col gap-2 pt-2">
           <a
-            href={`https://wa.me/6281234567890?text=Hi! I'm interested in ordering ${product.name}`}
+            href={`https://wa.me/6285336573814?text=Halo%20Admin%2C%20saya%20tertarik%20memesan%20${encodeURIComponent(
+              product.name,
+            )}%20di%20OyMaDear.`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition-colors font-medium"
           >
             <MessageCircle size={20} />
-            Order Now
+            Pesan via WhatsApp
           </a>
           <button
             onClick={onViewDetail}
             className="border-2 border-red-600 text-red-600 px-6 py-3 rounded-full hover:bg-red-50 transition-colors font-medium"
           >
-            View Detail
+            Lihat Detail
           </button>
         </div>
       </div>

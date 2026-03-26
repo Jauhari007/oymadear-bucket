@@ -1,47 +1,80 @@
 import Masonry from 'react-responsive-masonry';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+import bucket1 from './images/bucket_1.jpg';
+import bucket2 from './images/bucket_2.jpg';
+import bucket3 from './images/bucket_3.jpg';
+import bucket4 from './images/bucket_4.jpg';
+import bucket5 from './images/bucket_5.jpg';
+import bucket6 from './images/bucket_6.jpg';
+import bucket7 from './images/bucket_7.jpg';
+import bucket8 from './images/bucket_8.jpg';
+import bucketAnniv from './images/bucket_anniv.jpg';
+import bucketBunga from './images/bucket_bunga.jpg';
+import bucketUang from './images/bucket_uang.jpg';
+import graduationDoll from './images/graduation_doll.jpg';
+
 export function Gallery() {
   const galleryImages = [
     {
       id: '1',
-      src: 'https://images.unsplash.com/photo-1584972720792-5477c604d033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBidWNrZXQlMjBmbG93ZXIlMjBhcnJhbmdlbWVudCUyMHBpbmt8ZW58MXx8fHwxNzczNjgyMTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Pink luxury arrangement',
+      src: bucket1,
+      alt: 'Bucket bunga OyMaDear 1',
     },
     {
       id: '2',
-      src: 'https://images.unsplash.com/photo-1662326495491-764da874b01f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFkdWF0aW9uJTIwZmxvd2VyJTIwYm91cXVldCUyMGJ1Y2tldHxlbnwxfHx8fDE3NzM2ODIxNzd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Graduation bouquet',
+      src: bucket2,
+      alt: 'Bucket bunga OyMaDear 2',
     },
     {
       id: '3',
-      src: 'https://images.unsplash.com/photo-1772688168226-c0968d4816ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaXJ0aGRheSUyMGZsb3dlciUyMGFycmFuZ2VtZW50JTIwcm9zZXxlbnwxfHx8fDE3NzM2ODIxNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Birthday arrangement',
+      src: bucket3,
+      alt: 'Bucket bunga OyMaDear 3',
     },
     {
       id: '4',
-      src: 'https://images.unsplash.com/photo-1587371921769-eda287cc0209?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaW5rJTIwcm9zZSUyMGJvdXF1ZXQlMjBwcmVtaXVtfGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Premium pink roses',
+      src: bucket4,
+      alt: 'Bucket bunga OyMaDear 4',
     },
     {
       id: '5',
-      src: 'https://images.unsplash.com/photo-1671761950074-c623f925c089?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmbG93ZXIlMjBhcnJhbmdlbWVudCUyMHJlZCUyMHJvc2VzfGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Red roses arrangement',
+      src: bucket5,
+      alt: 'Bucket bunga OyMaDear 5',
     },
     {
       id: '6',
-      src: 'https://images.unsplash.com/photo-1610507121084-0cb0661c72bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwYXN0ZWwlMjBmbG93ZXIlMjBib3VxdWV0JTIwYmFza2V0fGVufDF8fHx8MTc3MzY4MjE3OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Pastel flower bouquet',
+      src: bucket6,
+      alt: 'Bucket bunga OyMaDear 6',
     },
     {
       id: '7',
-      src: 'https://images.unsplash.com/photo-1714328013428-a7a60f200e24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcHJpbmclMjBmbG93ZXIlMjBhcnJhbmdlbWVudCUyMGNvbG9yZnVsfGVufDF8fHx8MTc3MzY4MjE4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Colorful spring arrangement',
+      src: bucket7,
+      alt: 'Bucket bunga OyMaDear 7',
     },
     {
       id: '8',
-      src: 'https://images.unsplash.com/photo-1584972720792-5477c604d033?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBidWNrZXQlMjBmbG93ZXIlMjBhcnJhbmdlbWVudCUyMHBpbmt8ZW58MXx8fHwxNzczNjgyMTc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      alt: 'Elegant pink arrangement',
+      src: bucket8,
+      alt: 'Bucket bunga OyMaDear 8',
+    },
+    {
+      id: '9',
+      src: bucketAnniv,
+      alt: 'Bucket bunga anniversary OyMaDear',
+    },
+    {
+      id: '10',
+      src: bucketBunga,
+      alt: 'Bucket bunga OyMaDear',
+    },
+    {
+      id: '11',
+      src: bucketUang,
+      alt: 'Bucket uang OyMaDear',
+    },
+    {
+      id: '12',
+      src: graduationDoll,
+      alt: 'Graduation doll OyMaDear',
     },
   ];
 
@@ -50,10 +83,11 @@ export function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">Gallery</span>
+            Galeri{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-pink-500">OyMaDear</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Browse through our beautiful collection of handcrafted bucket flower arrangements
+            Lihat beberapa contoh bucket bunga handmade OyMaDear yang pernah kami buat untuk pelanggan.
           </p>
         </div>
 
